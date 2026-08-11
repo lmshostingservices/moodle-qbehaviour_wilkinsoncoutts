@@ -1,0 +1,17 @@
+/*
+ * Wilkinson Coutts behaviour styles.
+ *
+ * SAFETY: Scoped to body#page-mod-quiz-attempt so these rules are
+ * completely inert on every other Moodle page (admin, course, etc.).
+ * This prevents any possibility of hiding primary or secondary navigation.
+ */
+
+/* Hide the "Finish attempt" end-test link until the student reaches the last page. */
+body#page-mod-quiz-attempt.wilkinsoncoutts-feedback-behaviour a.endtestlink {
+    display: none;
+}
+
+/* Reveal it once the server adds the last-page class to the body. */
+body#page-mod-quiz-attempt.wilkinsoncoutts-feedback-behaviour.wilkinsoncoutts-attempt-lastpage a.endtestlink {
+    display: inherit;
+}
