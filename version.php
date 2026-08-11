@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbehaviour_wilkinsoncoutts';
-$plugin->version   = 2026061900006;
+$plugin->version   = 2026061900;
 $plugin->requires  = 2024041600;
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->release = '3.1';
