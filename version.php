@@ -25,10 +25,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbehaviour_wilkinsoncoutts';
-$plugin->version   = 2026061900;
+$plugin->version   = 2026082901;
 $plugin->requires  = 2024041600;
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release = '3.1';
+$plugin->release = '3.2'; // RELEASE RECOVERY: Republished the reviewed authoritative source under a new immutable tag because the historical tag contained a different source tree. No functional changes.
 // v2.9: ROOT-CAUSE FIX for "Leave site?" dialog on MCQ last-page nav-block clicks.
 // All prior approaches (v2.3–v2.8) were fundamentally broken for two reasons:
 //

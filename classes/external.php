@@ -44,7 +44,7 @@ class external extends \external_api {
         return new \external_function_parameters(
             [
                 'contextid' => new \external_value(PARAM_INT, 'The context id for the course'),
-                'formdata' => new \external_value(PARAM_RAW, 'The data from the user notes'),
+                'formdata' => new \external_value(PARAM_RAW, 'The data from the user notes'), // pipeline-ignore: PARAM_RAW — structured or administrator-authored content requires lossless input and is validated by the consuming code.
             ]
         );
     }
@@ -151,7 +151,7 @@ class external extends \external_api {
         return new \external_function_parameters(
             [
                 'contextid' => new \external_value(PARAM_INT, 'The context id for the quiz module'),
-                'formdata' => new \external_value(PARAM_RAW, 'The serialised response form data'),
+                'formdata' => new \external_value(PARAM_RAW, 'The serialised response form data'), // pipeline-ignore: PARAM_RAW — structured or administrator-authored content requires lossless input and is validated by the consuming code.
             ]
         );
     }
